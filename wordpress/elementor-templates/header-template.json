@@ -1,0 +1,89 @@
+{
+  "version": "0.4",
+  "title": "Header Althium Pro",
+  "type": "header",
+  "content": [
+    {
+      "id": "alt_header_section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": { "unit": "px", "size": 1280 },
+        "gap": "no",
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "sticky": "top",
+        "sticky_effects_offset": 50,
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": { "horizontal": 0, "vertical": 4, "blur": 20, "spread": 0, "color": "rgba(12, 46, 99, 0.06)" }
+      },
+      "elements": [
+        {
+          "id": "col_logo",
+          "elType": "column",
+          "settings": { "_column_size": 25 },
+          "elements": [
+            {
+              "id": "widget_site_logo",
+              "elType": "widget",
+              "widgetType": "theme-site-logo",
+              "settings": {
+                "custom_caption": "ALTHIUM SARL",
+                "link_to": "custom",
+                "link": { "url": "/" },
+                "width": { "unit": "px", "size": 180 }
+              }
+            }
+          ]
+        },
+        {
+          "id": "col_menu",
+          "elType": "column",
+          "settings": { "_column_size": 55 },
+          "elements": [
+            {
+              "id": "widget_nav_menu",
+              "elType": "widget",
+              "widgetType": "nav-menu",
+              "settings": {
+                "menu": "menu-principal",
+                "layout": "horizontal",
+                "pointer": "underline",
+                "indicator": "classic",
+                "color_menu_item": "#161B22",
+                "color_menu_item_hover": "#0C2E63",
+                "color_menu_item_active": "#C41230",
+                "typography_typography": "custom",
+                "typography_font_family": "Sora",
+                "typography_font_weight": "600",
+                "typography_font_size": { "unit": "px", "size": 15 }
+              }
+            }
+          ]
+        },
+        {
+          "id": "col_cta",
+          "elType": "column",
+          "settings": { "_column_size": 20 },
+          "elements": [
+            {
+              "id": "widget_btn_cta",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Demander un devis",
+                "link": { "url": "#elementor-action:action=popup:open&settings=eyJpZCI6ImRldmlzLXBvcHVwIn0=" },
+                "button_type": "danger",
+                "button_text_color": "#FFFFFF",
+                "background_color": "#C41230",
+                "border_radius": { "unit": "px", "top": 8, "right": 8, "bottom": 8, "left": 8 },
+                "typography_font_family": "Sora",
+                "typography_font_weight": "700"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

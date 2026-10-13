@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Devis — ALTHIUM SARL Côte d'Ivoire</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.25fr;
+      gap: 45px;
+      margin-top: 30px;
+    }
+    .info-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 35px;
+      box-shadow: var(--shadow-sm);
+    }
+    .info-item {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 22px;
+    }
+    .info-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(12, 46, 99, 0.08);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+    .form-wrapper {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 38px;
+      box-shadow: var(--shadow-md);
+    }
+    .map-container {
+      width: 100%;
+      height: 400px;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin-top: 50px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+    @media (max-width: 850px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-links">
+        <a href="tel:+2250556562524">📞 +225 05 56 56 25 24</a>
+        <a href="tel:+2250758783221">📞 +225 07 58 78 32 21</a>
+        <a href="mailto:contact@althium.ci">✉️ contact@althium.ci</a>
+        <a href="mailto:info@althium.ci">✉️ info@althium.ci</a>
+      </div>
+      <div style="font-size:12px; font-weight:700; color:#38BDF8;">
+        📍 Abidjan, Côte d'Ivoire
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <img src="logo-althium.png" alt="ALTHIUM SARL">
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="a-propos.html" class="nav-link">À Propos</a>
+        <a href="metier-single.html" class="nav-link">Nos 6 Activités</a>
+        <a href="realisations.html" class="nav-link">Réalisations</a>
+        <a href="blog.html" class="nav-link">Actualités</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <div class="mobile-nav-cta">
+          <button type="button" class="btn btn-primary" data-open-modal style="width:100%;">Demander un devis</button>
+        </div>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary" data-open-modal>Demander un devis</button>
+        <button type="button" class="menu-burger" id="burgerBtn" aria-label="Menu principal" aria-expanded="false">
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- BANDEAU CONTACT -->
+  <section style="background:linear-gradient(135deg, #092047 0%, #0C2E63 100%); color:#FFF; padding:80px 0 60px;">
+    <div class="container text-center" style="text-align:center;">
+      <div style="font-family:var(--font-title); font-size:13px; font-weight:800; color:#38BDF8; letter-spacing:1px; text-transform:uppercase; margin-bottom:10px;">
+        ÉCHANGE DIRECT &amp; RÉPONSE SOUS 24H
+      </div>
+      <h1 style="font-size:44px; font-weight:800; color:#FFFFFF; margin-bottom:12px;">Contactez ALTHIUM SARL</h1>
+      <p style="font-size:18px; color:#CBD5E1; max-width:700px; margin:0 auto;">
+        Nos directeurs de pôles sont à votre disposition pour étudier vos cahiers des charges et élaborer vos propositions techniques et financières sur mesure.
+      </p>
+    </div>
+  </section>
+
+  <!-- FORMULAIRE & COORDONNÉES -->
+  <section class="section-padding section-bg-light">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Informations directes Côte d'Ivoire -->
+        <div class="info-card">
+          <h2 style="font-size:24px; margin-bottom:22px; color:var(--primary);">Nos Coordonnées Officielles</h2>
+          
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div>
+              <h4 style="font-size:16px; font-weight:700; color:var(--primary);">Siège Social &amp; Bureaux</h4>
+              <p style="font-size:14px; color:var(--text-muted); margin-top:2px;">
+                ALTHIUM SARL<br>
+                Abidjan, République de Côte d'Ivoire<br>
+                Interventions dans tout le pays et en zone UEMOA.
+              </p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">📞</div>
+            <div>
+              <h4 style="font-size:16px; font-weight:700; color:var(--primary);">Téléphones Directs</h4>
+              <p style="font-size:14px; color:var(--text); margin-top:2px;">
+                Ligne 1 : <a href="tel:+2250556562524" style="font-weight:700; color:var(--primary);">+225 05 56 56 25 24</a><br>
+                Ligne 2 : <a href="tel:+2250758783221" style="font-weight:700; color:var(--primary);">+225 07 58 78 32 21</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">✉️</div>
+            <div>
+              <h4 style="font-size:16px; font-weight:700; color:var(--primary);">Courriers Électroniques</h4>
+              <p style="font-size:14px; color:var(--text); margin-top:2px;">
+                Direction Générale : <a href="mailto:contact@althium.ci" style="font-weight:700; color:var(--accent);">contact@althium.ci</a><br>
+                Renseignements &amp; Devis : <a href="mailto:info@althium.ci" style="font-weight:700; color:var(--accent);">info@althium.ci</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon" style="background:#25D366; color:#FFF;">💬</div>
+            <div>
+              <h4 style="font-size:16px; font-weight:700; color:var(--primary);">WhatsApp Professionnel</h4>
+              <p style="font-size:14px; color:var(--text-muted); margin-top:2px;">
+                Échangez immédiatement avec un conseiller sur le <strong>+225 05 56 56 25 24</strong>.
+              </p>
+              <a href="https://wa.me/2250556562524?text=Bonjour%20Althium%20SARL" target="_blank" class="btn btn-secondary" style="padding:6px 14px; font-size:12px; margin-top:6px; background:#25D366;">
+                Ouvrir WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulaire de Devis Express Complet -->
+        <div class="form-wrapper">
+          <h2 style="font-size:24px; margin-bottom:8px; color:var(--primary);">Formulaire d'Étude Prioritaire</h2>
+          <p style="font-size:14px; color:var(--text-muted); margin-bottom:20px;">
+            Remplissez vos coordonnées pour être directement orienté vers le directeur du pôle concerné.
+          </p>
+
+          <form id="contactPageForm">
+            <div class="form-group">
+              <label class="form-label">Votre Nom complet / Raison Sociale *</label>
+              <input type="text" class="form-input" required placeholder="Ex: Marc KOUASSI — Société AXIS">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Numéro de Téléphone *</label>
+                <input type="tel" class="form-input" required placeholder="+225 05 56 56 25 24">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email Professionnel *</label>
+                <input type="email" class="form-input" required placeholder="contact@entreprise.ci">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Sélectionnez le Pôle d'Activité Concerné *</label>
+              <select class="form-select" required>
+                <option value="">Sélectionner une activité...</option>
+                <option value="btp">1. Bâtiment et Travaux Publics (BTP)</option>
+                <option value="immo">2. Immobilier (Transactions, Gestion, Promotion)</option>
+                <option value="conseil">3. Conseils en Gestion &amp; Intelligence Économique</option>
+                <option value="sport">4. Marketing Sportif (Sponsoring &amp; Événements)</option>
+                <option value="formation">5. Formations Professionnelles Certifiantes</option>
+                <option value="import">6. Import-Export &amp; Négoce International</option>
+                <option value="multi">Projet multi-disciplinaire transverse</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Cahier des charges ou description de votre projet *</label>
+              <textarea class="form-textarea" rows="4" required placeholder="Précisez la nature des prestations souhaitées, le calendrier et les objectifs..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%; padding:15px; font-size:16px;">
+              Transmettre à contact@althium.ci
+            </button>
+          </form>
+
+          <div id="contactSuccess" style="display:none; text-align:center; padding:30px 10px;">
+            <div style="font-size:44px; color:#10B981; margin-bottom:12px;">✓</div>
+            <h3 style="font-size:22px; color:var(--primary); margin-bottom:8px;">Demande transmise avec succès !</h3>
+            <p style="color:var(--text-muted); font-size:14px;">
+              Votre dossier a été transmis à nos équipes à <strong>contact@althium.ci</strong>. Nous vous contactons sous 24h ouvrées.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARTE GOOGLE MAPS INTÉGRÉE (ABIDJAN) -->
+      <div class="map-container">
+        <iframe 
+          title="Localisation ALTHIUM SARL Abidjan"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31778.67540209581!2d-4.0305888!3d5.3364448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ea5311959121%3A0x3fe3604f85e49f52!2sPlateau%2C%20Abidjan%2C%20C%C3%B4te%20d&#39;Ivoire!5e0!3m2!1sfr!2sci!4v1700000000000!5m2!1sfr!2sci" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRAND LOGO FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand-banner">
+        <div class="footer-logo-container">
+          <img src="logo-althium.png" alt="ALTHIUM SARL">
+        </div>
+        <div class="footer-tagline-highlight">« La force d'un professionnel »</div>
+      </div>
+
+      <div class="footer-bottom" style="border-top:none; padding-top:0;">
+        <div>© 2026 ALTHIUM SARL. Tous droits réservés.</div>
+        <div>
+          <a href="mailto:contact@althium.ci" style="color:#38BDF8; margin-right:15px;">contact@althium.ci</a>
+          <a href="tel:+2250556562524" style="color:#38BDF8;">+225 05 56 56 25 24</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOUTON WHATSAPP -->
+  <a href="https://wa.me/2250556562524?text=Bonjour%20Althium%20SARL" class="whatsapp-float-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2m.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.19 8.19 0 01-5.82 2.42c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.44 1.03 2.61c.13.17 1.77 2.7 4.28 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.29z"/></svg>
+  </a>
+
+  <!-- STICKY BAR MOBILE -->
+  <div class="mobile-sticky-bar">
+    <a href="tel:+2250556562524" class="mobile-bar-btn mobile-call">
+      <span>📞 +225 Appeler</span>
+    </a>
+    <button type="button" class="mobile-bar-btn mobile-quote" data-open-modal>
+      <span>⚡ Devis Express</span>
+    </button>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    const cpForm = document.getElementById('contactPageForm');
+    const cpSuccess = document.getElementById('contactSuccess');
+    if (cpForm) {
+      cpForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        cpForm.style.display = 'none';
+        cpSuccess.style.display = 'block';
+      });
+    }
+  </script>
+</body>
+</html>

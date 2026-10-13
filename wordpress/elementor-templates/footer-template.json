@@ -1,0 +1,165 @@
+{
+  "version": "0.4",
+  "title": "Footer Althium Pro — Grand Logo & Contact CI",
+  "type": "footer",
+  "content": [
+    {
+      "id": "alt_footer_section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": { "unit": "px", "size": 1280 },
+        "background_background": "classic",
+        "background_color": "#092047",
+        "padding": { "unit": "px", "top": 70, "right": 20, "bottom": 30, "left": 20 }
+      },
+      "elements": [
+        {
+          "id": "row_footer_brand_logo",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "align_items": "center",
+            "justify_content": "center",
+            "margin": { "unit": "px", "bottom": 40 },
+            "css_classes": "althium-footer-brand"
+          },
+          "elements": [
+            {
+              "id": "w_foot_big_logo",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": { "url": "/assets/logo/logo-althium.png" },
+                "width": { "unit": "px", "size": 260 },
+                "align": "center"
+              }
+            },
+            {
+              "id": "w_foot_tagline_lead",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "« LA FORCE D'UN PROFESSIONNEL »",
+                "header_size": "div",
+                "align": "center",
+                "title_color": "#38BDF8",
+                "typography_font_family": "Sora",
+                "typography_font_size": { "unit": "px", "size": 18 },
+                "typography_font_weight": "800"
+              }
+            }
+          ]
+        },
+        {
+          "id": "row_footer_cols",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "justify_content": "space-between"
+          },
+          "elements": [
+            {
+              "id": "col_foot_poles_6",
+              "elType": "container",
+              "settings": { "width": { "unit": "%", "size": 30 } },
+              "elements": [
+                {
+                  "id": "w_foot_title_poles",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Nos 6 Pôles d'Activité",
+                    "header_size": "h4",
+                    "title_color": "#FFFFFF",
+                    "typography_font_family": "Sora"
+                  }
+                },
+                {
+                  "id": "w_foot_links_poles",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      { "text": "1. BTP & Travaux Publics", "link": { "url": "/metiers/btp-construction" } },
+                      { "text": "2. Immobilier & Promotion", "link": { "url": "/metiers/immobilier" } },
+                      { "text": "3. Conseil & Intelligence Éco.", "link": { "url": "/metiers/conseil-intelligence-economique" } },
+                      { "text": "4. Marketing Sportif", "link": { "url": "/metiers/marketing-sportif" } },
+                      { "text": "5. Formations Certifiantes", "link": { "url": "/metiers/formations" } },
+                      { "text": "6. Import-Export & Négoce", "link": { "url": "/metiers/import-export" } }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "col_foot_nav",
+              "elType": "container",
+              "settings": { "width": { "unit": "%", "size": 25 } },
+              "elements": [
+                {
+                  "id": "w_foot_title_nav",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Navigation & Société",
+                    "header_size": "h4",
+                    "title_color": "#FFFFFF",
+                    "typography_font_family": "Sora"
+                  }
+                },
+                {
+                  "id": "w_foot_links_nav",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      { "text": "Accueil", "link": { "url": "/" } },
+                      { "text": "À Propos & Équipe", "link": { "url": "/a-propos" } },
+                      { "text": "Réalisations & Cas d'étude", "link": { "url": "/realisations" } },
+                      { "text": "Actualités & Blog", "link": { "url": "/blog" } },
+                      { "text": "Mentions Légales & RSE", "link": { "url": "/mentions-legales" } }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "col_foot_contact_ci",
+              "elType": "container",
+              "settings": { "width": { "unit": "%", "size": 40 } },
+              "elements": [
+                {
+                  "id": "w_foot_title_contact_ci",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Contact & Siège Côte d'Ivoire",
+                    "header_size": "h4",
+                    "title_color": "#FFFFFF",
+                    "typography_font_family": "Sora"
+                  }
+                },
+                {
+                  "id": "w_foot_contact_list_ci",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      { "text": "+225 05 56 56 25 24", "link": { "url": "tel:+2250556562524" } },
+                      { "text": "+225 07 58 78 32 21", "link": { "url": "tel:+2250758783221" } },
+                      { "text": "contact@althium.ci", "link": { "url": "mailto:contact@althium.ci" } },
+                      { "text": "info@althium.ci", "link": { "url": "mailto:info@althium.ci" } },
+                      { "text": "Abidjan, République de Côte d'Ivoire", "link": { "url": "/contact" } }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

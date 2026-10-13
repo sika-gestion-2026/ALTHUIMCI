@@ -1,0 +1,103 @@
+{
+  "version": "0.4",
+  "title": "Popup — Devis Express & Exit Intent ALTHIUM",
+  "type": "popup",
+  "content": [
+    {
+      "id": "container_popup_devis",
+      "elType": "container",
+      "settings": {
+        "width": { "unit": "px", "size": 650 },
+        "padding": { "unit": "px", "top": 40, "right": 40, "bottom": 40, "left": 40 },
+        "border_radius": { "unit": "px", "top": 16, "right": 16, "bottom": 16, "left": 16 },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "entrance_animation": "fadeInDown",
+        "triggers": {
+          "exit_intent": "yes",
+          "inactivity": "yes",
+          "inactivity_delay": 30
+        }
+      },
+      "elements": [
+        {
+          "id": "w_pop_badge",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "ÉTUDE TECHNIQUE PRIORITAIRE — RÉPONSE SOUS 24H",
+            "header_size": "span",
+            "title_color": "#C41230",
+            "typography_font_family": "Sora",
+            "typography_font_size": { "unit": "px", "size": 12 },
+            "typography_font_weight": "800"
+          }
+        },
+        {
+          "id": "w_pop_title",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Demandez votre devis ou consultation ALTHIUM",
+            "header_size": "h3",
+            "title_color": "#0C2E63",
+            "typography_font_family": "Sora",
+            "typography_font_size": { "unit": "px", "size": 26 },
+            "typography_font_weight": "700"
+          }
+        },
+        {
+          "id": "w_pop_form",
+          "elType": "widget",
+          "widgetType": "form",
+          "settings": {
+            "form_name": "Devis Express Althium CI",
+            "form_fields": [
+              {
+                "field_type": "text",
+                "field_label": "Nom complet ou Raison sociale",
+                "placeholder": "Ex: Marc KOUASSI / Société AXIS",
+                "required": "true",
+                "width": "100"
+              },
+              {
+                "field_type": "tel",
+                "field_label": "Numéro de téléphone direct",
+                "placeholder": "+225 05 56 56 25 24",
+                "required": "true",
+                "width": "50"
+              },
+              {
+                "field_type": "email",
+                "field_label": "Adresse email professionnelle",
+                "placeholder": "contact@entreprise.ci",
+                "required": "true",
+                "width": "50"
+              },
+              {
+                "field_type": "select",
+                "field_label": "Secteur d'activité concerné",
+                "field_options": "1. BTP & Travaux Publics\n2. Immobilier (Transactions, Gestion, Promotion)\n3. Conseil en Gestion & Intelligence Économique\n4. Marketing Sportif (Sponsoring & Athlètes)\n5. Formations Professionnelles Certifiantes\n6. Import-Export & Négoce International\nProjet transverse multidisciplinaire",
+                "required": "true",
+                "width": "100"
+              },
+              {
+                "field_type": "textarea",
+                "field_label": "Votre projet / besoin en quelques lignes",
+                "placeholder": "Précisez vos objectifs, le calendrier prévisionnel et la localisation...",
+                "required": "false",
+                "width": "100"
+              }
+            ],
+            "button_text": "Envoyer ma demande prioritaire",
+            "button_background_color": "#C41230",
+            "button_text_color": "#FFFFFF",
+            "button_width": "100",
+            "email_to": "contact@althium.ci, info@althium.ci",
+            "email_subject": "[Devis Web ALTHIUM CI] Nouvelle demande reçue"
+          }
+        }
+      ]
+    }
+  ]
+}

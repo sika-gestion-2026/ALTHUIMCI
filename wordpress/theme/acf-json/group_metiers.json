@@ -1,0 +1,110 @@
+{
+  "key": "group_metiers_fields",
+  "title": "Détails du Pôle Métier (ALTHIUM)",
+  "fields": [
+    {
+      "key": "field_pole_accent_color",
+      "label": "Couleur d'accent du Pôle",
+      "name": "pole_accent_color",
+      "type": "color_picker",
+      "instructions": "Couleur utilisée pour les bordures, tags et dégradés de ce pôle (ex: #0C2E63, #2E8B57, #D97706)",
+      "required": 0,
+      "default_value": "#0C2E63",
+      "enable_opacity": 0,
+      "return_format": "string"
+    },
+    {
+      "key": "field_pole_subtitle",
+      "label": "Accroche / Sous-titre du Pôle",
+      "name": "pole_subtitle",
+      "type": "text",
+      "instructions": "Courte phrase résumant l'expertise (ex: Ingénierie, gros œuvre, second œuvre & rénovation haut de gamme)",
+      "required": 1,
+      "default_value": "",
+      "placeholder": "Ex: Sécurité physique, télésurveillance et protection des biens et des personnes"
+    },
+    {
+      "key": "field_pole_icon",
+      "label": "Icône du Pôle (SVG ou PNG)",
+      "name": "pole_icon",
+      "type": "image",
+      "instructions": "Icône vectorielle ou image carrée transparente",
+      "required": 0,
+      "return_format": "url",
+      "preview_size": "thumbnail",
+      "library": "all"
+    },
+    {
+      "key": "field_pole_kpi_number",
+      "label": "Chiffre clé du Pôle",
+      "name": "pole_kpi_number",
+      "type": "text",
+      "instructions": "Ex: 150+, 99.8%, 24/7",
+      "required": 0,
+      "default_value": "100%"
+    },
+    {
+      "key": "field_pole_kpi_label",
+      "label": "Libellé du chiffre clé",
+      "name": "pole_kpi_label",
+      "type": "text",
+      "instructions": "Ex: Projets livrés dans les délais",
+      "required": 0,
+      "default_value": "Satisfaction client garantie"
+    },
+    {
+      "key": "field_pole_services_list",
+      "label": "Services Inclus (Répéteur)",
+      "name": "pole_services_list",
+      "type": "repeater",
+      "instructions": "Cliquez sur 'Ajouter un service' pour enrichir la liste sans toucher au design",
+      "required": 0,
+      "layout": "table",
+      "button_label": "+ Ajouter un Service",
+      "sub_fields": [
+        {
+          "key": "field_sub_service_title",
+          "label": "Titre du Service",
+          "name": "service_title",
+          "type": "text",
+          "required": 1,
+          "placeholder": "Ex: Audit & Études techniques"
+        },
+        {
+          "key": "field_sub_service_desc",
+          "label": "Description du Service",
+          "name": "service_desc",
+          "type": "textarea",
+          "rows": 3,
+          "required": 0,
+          "placeholder": "Brève explication de l'intervention et des bénéfices client"
+        }
+      ]
+    },
+    {
+      "key": "field_pole_brochure_pdf",
+      "label": "Plaquette Commerciale PDF",
+      "name": "pole_brochure_pdf",
+      "type": "file",
+      "instructions": "Document téléchargeable par les prospects",
+      "required": 0,
+      "return_format": "url",
+      "mime_types": "pdf"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "metiers"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true
+}

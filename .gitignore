@@ -1,0 +1,23 @@
+# Dépendances
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Système
+.DS_Store
+Thumbs.db
+
+# Editeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environnement
+.env
+.env.local
+
+# Git lui-même
+.git/

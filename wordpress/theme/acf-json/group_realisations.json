@@ -1,0 +1,98 @@
+{
+  "key": "group_realisations_fields",
+  "title": "Détails de la Réalisation (ALTHIUM)",
+  "fields": [
+    {
+      "key": "field_realisation_metier_link",
+      "label": "Métier rattaché",
+      "name": "realisation_metier",
+      "type": "post_object",
+      "instructions": "Sélectionnez le pôle métier concerné par cette réalisation",
+      "required": 1,
+      "post_type": [
+        "metiers"
+      ],
+      "taxonomy": [],
+      "allow_null": 0,
+      "multiple": 0,
+      "return_format": "object",
+      "ui": 1
+    },
+    {
+      "key": "field_realisation_meta",
+      "label": "Année & Localisation",
+      "name": "realisation_meta",
+      "type": "text",
+      "instructions": "Ex: 2025 • Abidjan, Côte d'Ivoire",
+      "required": 0,
+      "placeholder": "Ex: 2025 • Projet Tertiaire • Paris / Abidjan"
+    },
+    {
+      "key": "field_realisation_client",
+      "label": "Client / Maître d'ouvrage",
+      "name": "realisation_client",
+      "type": "text",
+      "instructions": "Nom de l'entreprise ou 'Confidentiel'",
+      "required": 0,
+      "placeholder": "Ex: Groupe Industriel International"
+    },
+    {
+      "key": "field_realisation_kpi",
+      "label": "Résultat chiffré / KPI",
+      "name": "realisation_kpi",
+      "type": "text",
+      "instructions": "Chiffre d'impact (ex: +45% d'efficacité énergétique, 0 incident, 12 000 m² rénovés)",
+      "required": 0,
+      "placeholder": "Ex: 12 000 m² sécurisés"
+    },
+    {
+      "key": "field_realisation_gallery",
+      "label": "Galerie de photos du projet",
+      "name": "realisation_gallery",
+      "type": "gallery",
+      "instructions": "Sélectionnez les photos HD du chantier ou de l'intervention",
+      "required": 0,
+      "return_format": "array",
+      "preview_size": "medium",
+      "insert": "append",
+      "library": "all"
+    },
+    {
+      "key": "field_realisation_before_img",
+      "label": "Photo AVANT (Optionnel - Pour comparateur)",
+      "name": "realisation_before_img",
+      "type": "image",
+      "instructions": "État initial avant intervention",
+      "required": 0,
+      "return_format": "url",
+      "preview_size": "medium",
+      "library": "all"
+    },
+    {
+      "key": "field_realisation_after_img",
+      "label": "Photo APRÈS (Optionnel - Pour comparateur)",
+      "name": "realisation_after_img",
+      "type": "image",
+      "instructions": "État final livré",
+      "required": 0,
+      "return_format": "url",
+      "preview_size": "medium",
+      "library": "all"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "realisations"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true
+}

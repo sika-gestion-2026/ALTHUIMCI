@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Fichier d'importation WordPress XML / WXR officiel ALTHIUM SARL (Côte d'Ivoire) -->
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/"
+>
+<channel>
+	<title>ALTHIUM SARL</title>
+	<link>https://althium.ci</link>
+	<description>La force d'un professionnel</description>
+	<pubDate>Sat, 05 Sep 2026 18:00:00 +0000</pubDate>
+	<language>fr-FR</language>
+	<wp:wxr_version>1.2</wp:wxr_version>
+	<wp:base_site_url>https://althium.ci</wp:base_site_url>
+	<wp:base_blog_url>https://althium.ci</wp:base_blog_url>
+
+	<!-- Taxonomie Secteur Métier (Les 6 secteurs officiels) -->
+	<wp:term><wp:term_id>1</wp:term_id><wp:term_taxonomy>secteur_metier</wp:term_taxonomy><wp:term_slug>btp-construction</wp:term_slug><wp:term_name>BTP &amp; Travaux Publics</wp:term_name></wp:term>
+	<wp:term><wp:term_id>2</wp:term_id><wp:term_taxonomy>secteur_metier</wp:term_taxonomy><wp:term_slug>immobilier</wp:term_slug><wp:term_name>Immobilier</wp:term_name></wp:term>
+	<wp:term><wp:term_id>3</wp:term_id><wp:term_taxonomy>secteur_metier</wp:term_taxonomy><wp:term_slug>conseil-ie</wp:term_slug><wp:term_name>Conseil &amp; Intelligence Éco.</wp:term_name></wp:term>
+	<wp:term><wp:term_id>4</wp:term_id><wp:term_taxonomy>secteur_metier</wp:term_taxonomy><wp:term_slug>marketing-sportif</wp:term_slug><wp:term_name>Marketing Sportif</wp:term_name></wp:term>
+	<wp:term><wp:term_id>5</wp:term_id><wp:term_taxonomy>secteur_metier</wp:term_taxonomy><wp:term_slug>formations</wp:term_slug><wp:term_name>Formations</wp:term_name></wp:term>
+	<wp:term><wp:term_id>6</wp:term_id><wp:term_taxonomy>secteur_metier</wp:term_taxonomy><wp:term_slug>import-export</wp:term_slug><wp:term_name>Import-Export</wp:term_name></wp:term>
+
+	<!-- ================= 1. BTP & TRAVAUX PUBLICS ================= -->
+	<item>
+		<title>Bâtiment et Travaux Publics (BTP)</title>
+		<link>https://althium.ci/metiers/btp-construction/</link>
+		<wp:post_id>101</wp:post_id>
+		<wp:post_name>btp-construction</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_type>metiers</wp:post_type>
+		<content:encoded><![CDATA[<p>ALTHIUM SARL excelle dans la construction, la rénovation et l'aménagement d'infrastructures en Côte d'Ivoire et dans la sous-région. Nos services intègrent les études de faisabilité, la conception, la maîtrise d'œuvre et la réalisation de projets résidentiels, commerciaux, industriels et d'infrastructures avec une rigueur sécurité et qualité certifiée.</p>]]></content:encoded>
+		<wp:postmeta><wp:meta_key>pole_subtitle</wp:meta_key><wp:meta_value><![CDATA[Construction, rénovation, aménagement & maîtrise d'œuvre certifiée]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>pole_accent_color</wp:meta_key><wp:meta_value><![CDATA[#0C2E63]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>pole_kpi_number</wp:meta_key><wp:meta_value><![CDATA[120+]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>pole_kpi_label</wp:meta_key><wp:meta_value><![CDATA[Ouvrages et chantiers livrés]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ================= 2. IMMOBILIER ================= -->
+	<item>
+		<title>Immobilier</title>
+		<link>https://althium.ci/metiers/immobilier/</link>
+		<wp:post_id>102</wp:post_id>
+		<wp:post_name>immobilier</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_type>metiers</wp:post_type>
+		<content:encoded><![CDATA[<p>Acteur de référence sur le marché immobilier ivoirien : transactions (achat, vente, location de biens de standing), gestion locative et syndic, promotion immobilière et conseil en investissement patrimonial sécurisé.</p>]]></content:encoded>
+		<wp:postmeta><wp:meta_key>pole_subtitle</wp:meta_key><wp:meta_value><![CDATA[Transactions, promotion immobilière, gestion de biens & conseil en investissement]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>pole_accent_color</wp:meta_key><wp:meta_value><![CDATA[#0891B2]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>pole_kpi_number</wp:meta_key><wp:meta_value><![CDATA[100%]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>pole_kpi_label</wp:meta_key><wp:meta_value><![CDATA[Sécurisation foncière garantie]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ================= 3. CONSEIL & INTELLIGENCE ÉCONOMIQUE ================= -->
+	<item>
+		<title>Conseils en Gestion &amp; Intelligence Économique</title>
+		<link>https://althium.ci/metiers/conseil-intelligence-economique/</link>
+		<wp:post_id>103</wp:post_id>
+		<wp:post_name>conseil-intelligence-economique</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_type>metiers</wp:post_type>
+		<content:encoded><![CDATA[<p>Veille stratégique (concurrentielle, technologique, réglementaire), analyse de marché, cartographie des acteurs, détection d'opportunités et menaces. Conseil en gestion stratégique d'entreprise, optimisation des processus et sécurité économique du patrimoine immatériel.</p>]]></content:encoded>
+		<wp:postmeta><wp:meta_key>pole_subtitle</wp:meta_key><wp:meta_value><![CDATA[Veille stratégique, analyse des marchés, sécurité économique & optimisation des processus]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>pole_accent_color</wp:meta_key><wp:meta_value><![CDATA[#0F172A]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>pole_kpi_number</wp:meta_key><wp:meta_value><![CDATA[360°]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>pole_kpi_label</wp:meta_key><wp:meta_value><![CDATA[Vision stratégique & aide à la décision]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ================= 4. MARKETING SPORTIF ================= -->
+	<item>
+		<title>Marketing Sportif</title>
+		<link>https://althium.ci/metiers/marketing-sportif/</link>
+		<wp:post_id>104</wp:post_id>
+		<wp:post_name>marketing-sportif</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_type>metiers</wp:post_type>
+		<content:encoded><![CDATA[<p>Valorisation des entités sportives, recherche et gestion de sponsoring, organisation d'événements sportifs d'envergure, gestion de droit à l'image des athlètes et développement de partenariats durables entre marques et fédérations.</p>]]></content:encoded>
+		<wp:postmeta><wp:meta_key>pole_subtitle</wp:meta_key><wp:meta_value><![CDATA[Sponsoring, événementiel sportif, gestion d'image d'athlètes & partenariats]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>pole_accent_color</wp:meta_key><wp:meta_value><![CDATA[#E11D48]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>pole_kpi_number</wp:meta_key><wp:meta_value><![CDATA[50k+]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>pole_kpi_label</wp:meta_key><wp:meta_value><![CDATA[Spectateurs mobilisés]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ================= 5. FORMATIONS ================= -->
+	<item>
+		<title>Formations Professionnelles</title>
+		<link>https://althium.ci/metiers/formations/</link>
+		<wp:post_id>105</wp:post_id>
+		<wp:post_name>formations</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_type>metiers</wp:post_type>
+		<content:encoded><![CDATA[<p>Transfert de compétences certifiant : formations sur mesure et inter-entreprises en gestion de projet BTP, stratégies immobilières, méthodologie de l'intelligence économique, marketing sportif et management opérationnel.</p>]]></content:encoded>
+		<wp:postmeta><wp:meta_key>pole_subtitle</wp:meta_key><wp:meta_value><![CDATA[Transfert de compétences, formations certifiantes sur mesure & inter-entreprises]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>pole_accent_color</wp:meta_key><wp:meta_value><![CDATA[#2E8B57]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>pole_kpi_number</wp:meta_key><wp:meta_value><![CDATA[2 400+]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>pole_kpi_label</wp:meta_key><wp:meta_value><![CDATA[Professionnels certifiés]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ================= 6. IMPORT-EXPORT ================= -->
+	<item>
+		<title>Import-Export &amp; Négoce</title>
+		<link>https://althium.ci/metiers/import-export/</link>
+		<wp:post_id>106</wp:post_id>
+		<wp:post_name>import-export</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_type>metiers</wp:post_type>
+		<content:encoded><![CDATA[<p>Facilitation des échanges commerciaux internationaux, sourcing de matières premières et produits manufacturés, logistique multimodale, chaîne d'approvisionnement et conseil en réglementation douanière.</p>]]></content:encoded>
+		<wp:postmeta><wp:meta_key>pole_subtitle</wp:meta_key><wp:meta_value><![CDATA[Sourcing mondial, logistique & supply chain, réglementation douanière]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>pole_accent_color</wp:meta_key><wp:meta_value><![CDATA[#D97706]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>pole_kpi_number</wp:meta_key><wp:meta_value><![CDATA[18]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>pole_kpi_label</wp:meta_key><wp:meta_value><![CDATA[Corridors logistiques maîtrisés]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ================= RÉALISATIONS EMBLÉMATIQUES ================= -->
+	<item>
+		<title>Réhabilitation du Complexe Tertiaire Horizon (BTP)</title>
+		<wp:post_id>201</wp:post_id>
+		<wp:status>publish</wp:status>
+		<wp:post_type>realisations</wp:post_type>
+		<category domain="secteur_metier" nicename="btp-construction"><![CDATA[BTP & Travaux Publics]]></category>
+		<wp:postmeta><wp:meta_key>realisation_meta</wp:meta_key><wp:meta_value><![CDATA[2025 • Abidjan, Plateau • Tertiaire]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>realisation_kpi</wp:meta_key><wp:meta_value><![CDATA[15 000 m² réhabilités]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Promotion Résidentielle Les Jardins d'Ébène (Immobilier)</title>
+		<wp:post_id>202</wp:post_id>
+		<wp:status>publish</wp:status>
+		<wp:post_type>realisations</wp:post_type>
+		<category domain="secteur_metier" nicename="immobilier"><![CDATA[Immobilier]]></category>
+		<wp:postmeta><wp:meta_key>realisation_meta</wp:meta_key><wp:meta_value><![CDATA[2025 • Abidjan, Cocody Riviera]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>realisation_kpi</wp:meta_key><wp:meta_value><![CDATA[36 logements de prestige livrés]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Veille Stratégique &amp; Due Diligence Panafricaine (Conseil &amp; IE)</title>
+		<wp:post_id>203</wp:post_id>
+		<wp:status>publish</wp:status>
+		<wp:post_type>realisations</wp:post_type>
+		<category domain="secteur_metier" nicename="conseil-ie"><![CDATA[Conseil & Intelligence Éco.]]></category>
+		<wp:postmeta><wp:meta_key>realisation_meta</wp:meta_key><wp:meta_value><![CDATA[2025 • Secteur Agro-Industrie & Énergie]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>realisation_kpi</wp:meta_key><wp:meta_value><![CDATA[+32% d'optimisation financière]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Organisation &amp; Sponsoring Tournoi International U20 (Sport)</title>
+		<wp:post_id>204</wp:post_id>
+		<wp:status>publish</wp:status>
+		<wp:post_type>realisations</wp:post_type>
+		<category domain="secteur_metier" nicename="marketing-sportif"><![CDATA[Marketing Sportif]]></category>
+		<wp:postmeta><wp:meta_key>realisation_meta</wp:meta_key><wp:meta_value><![CDATA[2025 • Abidjan Stadium]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>realisation_kpi</wp:meta_key><wp:meta_value><![CDATA[12 marques partenaires mobilisées]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Académie Cadres &amp; Management de Grands Projets (Formation)</title>
+		<wp:post_id>205</wp:post_id>
+		<wp:status>publish</wp:status>
+		<wp:post_type>realisations</wp:post_type>
+		<category domain="secteur_metier" nicename="formations"><![CDATA[Formations]]></category>
+		<wp:postmeta><wp:meta_key>realisation_meta</wp:meta_key><wp:meta_value><![CDATA[2025 • Cursus Certifiant Panafricain]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>realisation_kpi</wp:meta_key><wp:meta_value><![CDATA[380 directeurs d'opérations formés]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Approvisionnement Logistique Équipements Énergétiques (Import-Export)</title>
+		<wp:post_id>206</wp:post_id>
+		<wp:status>publish</wp:status>
+		<wp:post_type>realisations</wp:post_type>
+		<category domain="secteur_metier" nicename="import-export"><![CDATA[Import-Export]]></category>
+		<wp:postmeta><wp:meta_key>realisation_meta</wp:meta_key><wp:meta_value><![CDATA[2025 • Corridor Port d'Abidjan — Intérieur]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>realisation_kpi</wp:meta_key><wp:meta_value><![CDATA[2 500 tonnes de fret sécurisé]]></wp:meta_value></wp:postmeta>
+	</item>
+</channel>
+</rss>

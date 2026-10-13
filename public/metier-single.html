@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos 6 Activités &amp; Services — ALTHIUM SARL</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Barre de sélection des 6 pôles */
+    .services-nav-bar {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding: 12px 0 20px;
+      margin-bottom: 40px;
+      border-bottom: 2px solid var(--border);
+    }
+    .service-nav-btn {
+      padding: 12px 20px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-light);
+      border: 1px solid var(--border);
+      color: var(--primary);
+      font-family: var(--font-title);
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.25s ease;
+    }
+    .service-nav-btn:hover,
+    .service-nav-btn.active {
+      background: var(--primary);
+      color: var(--white);
+      border-color: var(--primary);
+    }
+    .service-section-box {
+      display: none;
+      animation: fadeIn 0.4s ease;
+    }
+    .service-section-box.active {
+      display: block;
+    }
+    .subservice-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 30px 0;
+    }
+    .subservice-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 26px;
+      box-shadow: var(--shadow-sm);
+    }
+    .subservice-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+    .subservice-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .methodology-box {
+      background: #092047;
+      color: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 35px;
+      margin: 35px 0;
+    }
+    .training-modules-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 25px 0;
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+    .training-modules-table th {
+      background: var(--primary);
+      color: #FFFFFF;
+      font-family: var(--font-title);
+      font-size: 13px;
+      padding: 14px;
+      text-align: left;
+    }
+    .training-modules-table td {
+      padding: 14px;
+      border-bottom: 1px solid var(--border);
+      font-size: 13px;
+    }
+    @media (max-width: 850px) {
+      .subservice-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-links">
+        <a href="tel:+2250556562524">📞 +225 05 56 56 25 24</a>
+        <a href="tel:+2250758783221">📞 +225 07 58 78 32 21</a>
+        <a href="mailto:contact@althium.ci">✉️ contact@althium.ci</a>
+        <a href="mailto:info@althium.ci">✉️ info@althium.ci</a>
+      </div>
+      <div style="font-size:12px; font-weight:700; color:#38BDF8;">
+        📍 Abidjan, Côte d'Ivoire
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <img src="logo-althium.png" alt="ALTHIUM SARL">
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="a-propos.html" class="nav-link">À Propos</a>
+        <a href="metier-single.html" class="nav-link active">Nos 6 Activités</a>
+        <a href="realisations.html" class="nav-link">Réalisations</a>
+        <a href="blog.html" class="nav-link">Actualités</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <div class="mobile-nav-cta">
+          <button type="button" class="btn btn-primary" data-open-modal style="width:100%;">Demander un devis</button>
+        </div>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary" data-open-modal>Demander un devis</button>
+        <button type="button" class="menu-burger" id="burgerBtn" aria-label="Menu principal" aria-expanded="false">
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- BANDEAU TITRE -->
+  <section style="background:linear-gradient(135deg, #092047 0%, #0C2E63 100%); color:#FFF; padding:80px 0 60px;">
+    <div class="container text-center" style="text-align:center;">
+      <div style="font-family:var(--font-title); font-size:13px; font-weight:800; color:#38BDF8; letter-spacing:1px; text-transform:uppercase; margin-bottom:10px;">
+        OFFRE GLOBALE INTÉGRÉE
+      </div>
+      <h1 style="font-size:44px; font-weight:800; color:#FFFFFF; margin-bottom:14px;">Nos 6 Domaines d'Activité</h1>
+      <p style="font-size:18px; color:#CBD5E1; max-width:700px; margin:0 auto;">
+        Cliquez sur un pôle ci-dessous pour explorer nos prestations détaillées, nos méthodologies et nos garanties de résultats.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION PRINCIPALE DÉTAILLÉE (LE CŒUR DU SITE) -->
+  <section class="section-padding">
+    <div class="container">
+      
+      <!-- NAV TABS DES 6 ACTIVITÉS -->
+      <div class="services-nav-bar">
+        <button type="button" class="service-nav-btn active" data-target="box-btp">1. BTP &amp; Travaux Publics</button>
+        <button type="button" class="service-nav-btn" data-target="box-immo">2. Immobilier</button>
+        <button type="button" class="service-nav-btn" data-target="box-conseil">3. Conseil &amp; Intelligence Éco.</button>
+        <button type="button" class="service-nav-btn" data-target="box-sport">4. Marketing Sportif</button>
+        <button type="button" class="service-nav-btn" data-target="box-formation">5. Formations</button>
+        <button type="button" class="service-nav-btn" data-target="box-import">6. Import-Export</button>
+      </div>
+
+      <!-- ==================== 3.1. BTP ==================== -->
+      <div class="service-section-box active" id="box-btp">
+        <div style="border-left:5px solid var(--primary); padding-left:20px; margin-bottom:25px;">
+          <span class="section-tag">Pôle 01</span>
+          <h2 style="font-size:32px; color:var(--primary);">Bâtiment et Travaux Publics (BTP)</h2>
+          <p style="font-size:16px; color:var(--text-muted); margin-top:6px;">
+            Expertise de premier plan dans la construction neuve, la rénovation lourde et l'aménagement d'infrastructures.
+          </p>
+        </div>
+
+        <p style="font-size:15px; line-height:1.7; color:var(--text); margin-bottom:25px;">
+          ALTHIUM SARL intervient sur l'ensemble de la chaîne de valeur du BTP en Côte d'Ivoire. Nous mobilisons des ingénieurs structure, des géomètres et des conducteurs de travaux aguerris pour garantir des ouvrages conformes aux normes environnementales et parasismiques.
+        </p>
+
+        <h3 style="font-size:22px; color:var(--primary); margin-top:30px;">Services Offerts en BTP :</h3>
+        <div class="subservice-grid">
+          <div class="subservice-card">
+            <h4 class="subservice-title">Études &amp; Faisabilité</h4>
+            <p class="subservice-desc">Études géotechniques, études d'impact environnemental, modélisation BIM 3D et dimensionnement des structures béton et acier.</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">Conception &amp; Maîtrise d'Œuvre</h4>
+            <p class="subservice-desc">Élaboration des plans d'architecte, dossiers de consultation des entreprises (DCE), pilotage OPC et suivi de chantier au millimètre.</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">Gros Œuvre &amp; Génie Civil</h4>
+            <p class="subservice-desc">Terrassements grande échelle, fondations spéciales, élévation des structures béton armé et charpentes métalliques industrielles.</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">Second Œuvre &amp; Aménagements</h4>
+            <p class="subservice-desc">Cloisons acoustiques, revêtements haut de gamme, plomberie, électricité TGBT, climatisation centrale et réseaux domotiques.</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">Rénovation &amp; Réhabilitation</h4>
+            <p class="subservice-desc">Rénovation thermique de façades tertiaires, renforcement de structures anciennes et mise aux normes d'établissements recevant du public (ERP).</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">VRD &amp; Infrastructures</h4>
+            <p class="subservice-desc">Voiries et réseaux divers, réseaux d'assainissement pluvial et eaux usées, aménagements paysagers et parkings sécurisés.</p>
+          </div>
+        </div>
+
+        <!-- Approche Qualité & Sécurité -->
+        <div class="methodology-box">
+          <h3 style="font-size:22px; margin-bottom:10px; color:#38BDF8;">Notre Approche Qualité et Sécurité en BTP</h3>
+          <p style="font-size:14px; line-height:1.6; color:#E2E8F0;">
+            Chaque chantier ALTHIUM est soumis à un <strong>Plan Particulier de Sécurité et de Protection de la Santé (PPSPS)</strong>. Nous imposons le port rigoureux des EPI, réalisons des audits réguliers avec des bureaux de contrôle agréés et assurons l'ensemble de nos réalisations avec une <strong>garantie décennale</strong>.
+          </p>
+        </div>
+
+        <div style="text-align:center; margin-top:30px;">
+          <button type="button" class="btn btn-primary" data-open-modal>Demander une étude technique BTP</button>
+        </div>
+      </div>
+
+      <!-- ==================== 3.2. IMMOBILIER ==================== -->
+      <div class="service-section-box" id="box-immo">
+        <div style="border-left:5px solid #0891B2; padding-left:20px; margin-bottom:25px;">
+          <span class="section-tag" style="color:#0891B2;">Pôle 02</span>
+          <h2 style="font-size:32px; color:var(--primary);">Immobilier &amp; Promotion</h2>
+          <p style="font-size:16px; color:var(--text-muted); margin-top:6px;">
+            Services complets liés au marché immobilier : transactions, gestion locative, promotion et conseil en investissement.
+          </p>
+        </div>
+
+        <p style="font-size:15px; line-height:1.7; color:var(--text); margin-bottom:25px;">
+          Le marché immobilier à Abidjan et en Côte d'Ivoire requiert une parfaite maîtrise juridique et foncière. ALTHIUM accompagne les particuliers, les expatriés, la diaspora et les fonds institutionnels pour valoriser et sécuriser leurs actifs immobiliers.
+        </p>
+
+        <h3 style="font-size:22px; color:var(--primary); margin-top:30px;">Services Offerts en Immobilier :</h3>
+        <div class="subservice-grid">
+          <div class="subservice-card">
+            <h4 class="subservice-title">Transactions Immobilières</h4>
+            <p class="subservice-desc">Achat, vente et location de biens résidentiels de standing, d'immeubles de bureaux, d'entrepôts logistiques et de terrains avec ACD vérifié.</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">Gestion Locative &amp; Syndic</h4>
+            <p class="subservice-desc">Sélection rigoureuse des locataires, encaissement des loyers, gestion des états des lieux, maintenance technique et syndic de copropriété.</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">Promotion Immobilière</h4>
+            <p class="subservice-desc">Conception et développement de programmes résidentiels modernes (villas contemporaines, résidences fermées sécurisées avec piscine et espaces verts).</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">Conseil en Investissement</h4>
+            <p class="subservice-desc">Calcul de rentabilité locative, optimisation fiscale, structuration de SCI et montage financier pour investisseurs ivoiriens et diaspora.</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">Sécurisation Foncière</h4>
+            <p class="subservice-desc">Due diligence foncière auprès du Ministère de la Construction, vérification des arrêtés de concession définitive (ACD) et bornage contradictoire.</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">Valorisation d'Actifs</h4>
+            <p class="subservice-desc">Home-staging, réhabilitation d'appartements et repositionnement commercial pour maximiser les loyers et la plus-value à la revente.</p>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:30px;">
+          <button type="button" class="btn btn-primary" data-open-modal>Confier un bien ou consulter nos offres</button>
+        </div>
+      </div>
+
+      <!-- ==================== 3.3. CONSEIL EN GESTION & INTELLIGENCE ÉCONOMIQUE ==================== -->
+      <div class="service-section-box" id="box-conseil">
+        <div style="border-left:5px solid #0F172A; padding-left:20px; margin-bottom:25px;">
+          <span class="section-tag" style="color:#0F172A;">Pôle 03</span>
+          <h2 style="font-size:32px; color:var(--primary);">Conseils en Gestion &amp; Intelligence Économique (IE)</h2>
+          <p style="font-size:16px; color:var(--text-muted); margin-top:6px;">
+            L'importance cruciale de l'information stratégique et de la sécurité économique pour éclairer la prise de décision.
+          </p>
+        </div>
+
+        <p style="font-size:15px; line-height:1.7; color:var(--text); margin-bottom:25px;">
+          Dans un environnement économique de plus en plus concurrentiel et interconnecté, l'intuition ne suffit plus. ALTHIUM arme les directions générales, investisseurs et institutions d'outils analytiques de pointe pour anticiper les risques et capter les opportunités d'affaires.
+        </p>
+
+        <h3 style="font-size:22px; color:var(--primary); margin-top:30px;">Services Offerts en Conseil &amp; IE :</h3>
+        <div class="subservice-grid">
+          <div class="subservice-card">
+            <h4 class="subservice-title">Veille Stratégique 360°</h4>
+            <p class="subservice-desc">Surveillance concurrentielle, veille technologique, veille réglementaire et juridique sur le cadre fiscal et douanier en Afrique de l'Ouest.</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">Analyse de Marché &amp; Opportunités</h4>
+            <p class="subservice-desc">Études sectorielles approfondies, cartographie des acteurs clés, benchmarks de positionnement et évaluation du potentiel de croissance.</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">Conseil en Stratégie &amp; Gestion</h4>
+            <p class="subservice-desc">Élaboration de plans d'entreprise, optimisation des processus opérationnels, management de transition et gouvernance d'entreprise.</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">Sécurité Économique</h4>
+            <p class="subservice-desc">Protection du patrimoine immatériel, prévention des fuites d'informations stratégiques, lutte contre la contrefaçon et gestion des risques de réputation.</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">Due Diligence Partenaires</h4>
+            <p class="subservice-desc">Vérification de probité, antécédents financiers et réputationnels des futurs associés ou prestataires avant signature de contrats majeurs.</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">Accompagnement au Changement</h4>
+            <p class="subservice-desc">Conduite de projets de transformation digitale, alignement managérial et sensibilisation des équipes à la culture de sûreté de l'information.</p>
+          </div>
+        </div>
+
+        <!-- Méthodologie en IE -->
+        <div class="methodology-box">
+          <h3 style="font-size:22px; margin-bottom:10px; color:#38BDF8;">Notre Méthodologie en Intelligence Économique : Le Cycle de l'Information</h3>
+          <p style="font-size:14px; line-height:1.6; color:#E2E8F0;">
+            1. <strong>Expression des besoins :</strong> Définition des axes stratégiques.<br>
+            2. <strong>Collecte qualifiée :</strong> Sources ouvertes (OSINT), bases de données internationales et réseaux de terrain éthiques.<br>
+            3. <strong>Analyse &amp; Corrélation :</strong> Traitement de la donnée brute en renseignement stratégique exploitable.<br>
+            4. <strong>Diffusion sécurisée :</strong> Rapports de synthèse d'aide à la décision pour le comité de direction.
+          </p>
+        </div>
+
+        <div style="text-align:center; margin-top:30px;">
+          <button type="button" class="btn btn-primary" data-open-modal>Consulter notre cellule d'intelligence économique</button>
+        </div>
+      </div>
+
+      <!-- ==================== 3.4. MARKETING SPORTIF ==================== -->
+      <div class="service-section-box" id="box-sport">
+        <div style="border-left:5px solid #E11D48; padding-left:20px; margin-bottom:25px;">
+          <span class="section-tag" style="color:#E11D48;">Pôle 04</span>
+          <h2 style="font-size:32px; color:var(--primary);">Marketing Sportif</h2>
+          <p style="font-size:16px; color:var(--text-muted); margin-top:6px;">
+            L'expertise d'Althium dans la valorisation des entités sportives, des marques et des athlètes.
+          </p>
+        </div>
+
+        <p style="font-size:15px; line-height:1.7; color:var(--text); margin-bottom:25px;">
+          Le sport est un vecteur universel d'émotion, de cohésion sociale et de visibilité exceptionnelle pour les marques en Afrique. ALTHIUM connecte le monde de l'entreprise avec l'écosystème sportif pour créer des partenariats durables et impactants.
+        </p>
+
+        <h3 style="font-size:22px; color:var(--primary); margin-top:30px;">Services Offerts en Marketing Sportif :</h3>
+        <div class="subservice-grid">
+          <div class="subservice-card">
+            <h4 class="subservice-title">Sponsoring &amp; Partenariats</h4>
+            <p class="subservice-desc">Recherche active de sponsors pour clubs et fédérations, négociation des packages de droits et activation de marque sur les terrains.</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">Événementiel Sportif Clé en Main</h4>
+            <p class="subservice-desc">Organisation de tournois d'entreprise, championnats régionaux, logistique des délégations, billetterie et accueil VIP.</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">Gestion d'Image d'Athlètes</h4>
+            <p class="subservice-desc">Accompagnement de carrière, relations publiques, contrats publicitaires, media-training et protection de la marque personnelle des champions.</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">Activation Digitale &amp; Fan Experience</h4>
+            <p class="subservice-desc">Création de contenus vidéo viraux, gestion des réseaux sociaux d'entités sportives et merchandising pour engager les supporters.</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">Responsabilité Sociétale (RSE &amp; Sport)</h4>
+            <p class="subservice-desc">Programmes éducatifs et d'insertion professionnelle par la pratique sportive sponsorisés par les grandes entreprises.</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">Conseil Juridique &amp; Droits TV</h4>
+            <p class="subservice-desc">Accompagnement dans la cession des droits de diffusion audiovisuelle et la rédaction des contrats de sponsoring sportifs.</p>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:30px;">
+          <button type="button" class="btn btn-primary" data-open-modal>Échanger sur un projet de sponsoring sportif</button>
+        </div>
+      </div>
+
+      <!-- ==================== 3.5. FORMATIONS ==================== -->
+      <div class="service-section-box" id="box-formation">
+        <div style="border-left:5px solid #2E8B57; padding-left:20px; margin-bottom:25px;">
+          <span class="section-tag" style="color:#2E8B57;">Pôle 05</span>
+          <h2 style="font-size:32px; color:var(--primary);">Formations Professionnelles Continues</h2>
+          <p style="font-size:16px; color:var(--text-muted); margin-top:6px;">
+            L'engagement fort d'Althium dans le transfert de compétences et l'élévation des standards professionnels.
+          </p>
+        </div>
+
+        <p style="font-size:15px; line-height:1.7; color:var(--text); margin-bottom:25px;">
+          Nos programmes sont conçus par des praticiens de terrain pour répondre immédiatement aux exigences du marché de l'emploi et des entreprises. Nous formons les dirigeants, cadres intermédiaires et techniciens aux meilleures pratiques internationales.
+        </p>
+
+        <h3 style="font-size:22px; color:var(--primary); margin-top:30px;">Extrait du Catalogue des Formations :</h3>
+        <table class="training-modules-table">
+          <thead>
+            <tr>
+              <th>Intitulé du Module</th>
+              <th>Pôle Lié</th>
+              <th>Durée</th>
+              <th>Public Cible</th>
+              <th>Certification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Gestion de Projet &amp; Conduite de Chantier BTP</strong></td>
+              <td>BTP &amp; Construction</td>
+              <td>5 jours (35h)</td>
+              <td>Ingénieurs, conducteurs de travaux</td>
+              <td>Certificat d'Aptitude Althium</td>
+            </tr>
+            <tr>
+              <td><strong>Stratégies &amp; Montage d'Opérations Immobilières</strong></td>
+              <td>Immobilier</td>
+              <td>3 jours (21h)</td>
+              <td>Promoteurs, agents, investisseurs</td>
+              <td>Attestation d'Expertise</td>
+            </tr>
+            <tr>
+              <td><strong>Les Fondamentaux de l'Intelligence Économique</strong></td>
+              <td>Conseil &amp; IE</td>
+              <td>4 jours (28h)</td>
+              <td>Directeurs généraux, stratèges</td>
+              <td>Certificat d'Analyse Stratégique</td>
+            </tr>
+            <tr>
+              <td><strong>Marketing &amp; Recherche de Sponsoring Sportif</strong></td>
+              <td>Marketing Sportif</td>
+              <td>3 jours (21h)</td>
+              <td>Responsables com., présidents de clubs</td>
+              <td>Attestation Professionnelle</td>
+            </tr>
+            <tr>
+              <td><strong>Management QHSE &amp; Normes ISO 45001</strong></td>
+              <td>BTP &amp; Industrie</td>
+              <td>5 jours (35h)</td>
+              <td>Responsables sécurité, managers</td>
+              <td>Habilitation QHSE</td>
+            </tr>
+            <tr>
+              <td><strong>Procédures Douanières &amp; Supply Chain Internationale</strong></td>
+              <td>Import-Export</td>
+              <td>4 jours (28h)</td>
+              <td>Responsables logistiques, transitaires</td>
+              <td>Certificat Import-Export</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div style="text-align:center; margin-top:30px;">
+          <button type="button" class="btn btn-primary" data-open-modal>Demander le catalogue complet ou une session sur mesure</button>
+        </div>
+      </div>
+
+      <!-- ==================== 3.6. IMPORT-EXPORT ==================== -->
+      <div class="service-section-box" id="box-import">
+        <div style="border-left:5px solid #D97706; padding-left:20px; margin-bottom:25px;">
+          <span class="section-tag" style="color:#D97706;">Pôle 06</span>
+          <h2 style="font-size:32px; color:var(--primary);">Import-Export &amp; Négoce International</h2>
+          <p style="font-size:16px; color:var(--text-muted); margin-top:6px;">
+            Facilitation des échanges commerciaux internationaux, sourcing et sécurisation des corridors logistiques.
+          </p>
+        </div>
+
+        <p style="font-size:15px; line-height:1.7; color:var(--text); margin-bottom:25px;">
+          Grâce à son réseau de partenaires en Europe, en Asie et en Amérique, ALTHIUM SARL sécurise l'approvisionnement des entreprises ivoiriennes en matières premières critiques et équipements industriels, tout en accompagnant l'exportation des productions locales vers les marchés mondiaux.
+        </p>
+
+        <h3 style="font-size:22px; color:var(--primary); margin-top:30px;">Services Offerts en Import-Export :</h3>
+        <div class="subservice-grid">
+          <div class="subservice-card">
+            <h4 class="subservice-title">Sourcing International</h4>
+            <p class="subservice-desc">Identification et audit d'usines fabricantes fiables dans le monde, négociation des prix de gros et contrôle qualité avant embarquement.</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">Logistique &amp; Fret Multimodal</h4>
+            <p class="subservice-desc">Gestion intégrée du fret maritime (conteneurs complets FCL / groupage LCL), fret aérien urgent et transport routier inter-États.</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">Conseil &amp; Réglementation Douanière</h4>
+            <p class="subservice-desc">Optimisation du classement tarifaire, obtention des licences d'importation, dédouanement accéléré au Port Autonome d'Abidjan.</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">Négoce de Matériaux de Construction</h4>
+            <p class="subservice-desc">Approvisionnement continu en aciers structurels, ciments spéciaux, équipements sanitaires et engins de terrassement certifiés.</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">Exportation de Produits Locaux</h4>
+            <p class="subservice-desc">Conditionnement aux normes internationales, certification phytosanitaire et expédition sécurisée de matières premières agricoles et minières.</p>
+          </div>
+          <div class="subservice-card">
+            <h4 class="subservice-title">Sécurisation Financière des Échanges</h4>
+            <p class="subservice-desc">Mise en place de crédits documentaires (Credoc), lettres de crédit et instruments de couverture contre le risque de change.</p>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:30px;">
+          <button type="button" class="btn btn-primary" data-open-modal>Consulter notre service import-export</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GRAND LOGO FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand-banner">
+        <div class="footer-logo-container">
+          <img src="logo-althium.png" alt="ALTHIUM SARL">
+        </div>
+        <div class="footer-tagline-highlight">« La force d'un professionnel »</div>
+      </div>
+
+      <div class="footer-bottom" style="border-top:none; padding-top:0;">
+        <div>© 2026 ALTHIUM SARL. Tous droits réservés.</div>
+        <div>
+          <a href="mailto:contact@althium.ci" style="color:#38BDF8; margin-right:15px;">contact@althium.ci</a>
+          <a href="tel:+2250556562524" style="color:#38BDF8;">+225 05 56 56 25 24</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOUTON WHATSAPP -->
+  <a href="https://wa.me/2250556562524?text=Bonjour%20Althium%20SARL" class="whatsapp-float-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2m.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.19 8.19 0 01-5.82 2.42c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.44 1.03 2.61c.13.17 1.77 2.7 4.28 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.29z"/></svg>
+  </a>
+
+  <!-- STICKY BAR MOBILE -->
+  <div class="mobile-sticky-bar">
+    <a href="tel:+2250556562524" class="mobile-bar-btn mobile-call">
+      <span>📞 +225 Appeler</span>
+    </a>
+    <button type="button" class="mobile-bar-btn mobile-quote" data-open-modal>
+      <span>⚡ Devis Express</span>
+    </button>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    // Gestion des onglets de la page des 6 services
+    const navButtons = document.querySelectorAll('.service-nav-btn');
+    const serviceBoxes = document.querySelectorAll('.service-section-box');
+
+    // Vérifier paramètre URL ?metier=...
+    const urlParams = new URLSearchParams(window.location.search);
+    const metierParam = urlParams.get('metier');
+
+    const activateTab = (targetId) => {
+      navButtons.forEach(btn => {
+        if (btn.getAttribute('data-target') === targetId) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+      serviceBoxes.forEach(box => {
+        if (box.id === targetId) {
+          box.classList.add('active');
+        } else {
+          box.classList.remove('active');
+        }
+      });
+    };
+
+    if (metierParam) {
+      if (metierParam === 'btp') activateTab('box-btp');
+      if (metierParam === 'immo') activateTab('box-immo');
+      if (metierParam === 'conseil') activateTab('box-conseil');
+      if (metierParam === 'sport') activateTab('box-sport');
+      if (metierParam === 'formation') activateTab('box-formation');
+      if (metierParam === 'import') activateTab('box-import');
+    }
+
+    navButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.getAttribute('data-target');
+        activateTab(target);
+      });
+    });
+  </script>
+</body>
+</html>

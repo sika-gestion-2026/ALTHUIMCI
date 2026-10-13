@@ -1,0 +1,81 @@
+{
+  "key": "group_temoignages_fields",
+  "title": "Détails du Témoignage Client (ALTHIUM)",
+  "fields": [
+    {
+      "key": "field_temoignage_author",
+      "label": "Nom de l'auteur",
+      "name": "temoignage_author",
+      "type": "text",
+      "instructions": "Prénom et Nom du dirigeant ou responsable",
+      "required": 1,
+      "placeholder": "Ex: Marc KOUASSI"
+    },
+    {
+      "key": "field_temoignage_position",
+      "label": "Fonction / Poste",
+      "name": "temoignage_position",
+      "type": "text",
+      "instructions": "Ex: Directeur des Opérations",
+      "required": 0,
+      "placeholder": "Ex: Directeur Général"
+    },
+    {
+      "key": "field_temoignage_company",
+      "label": "Entreprise / Organisation",
+      "name": "temoignage_company",
+      "type": "text",
+      "instructions": "Nom de la société cliente",
+      "required": 1,
+      "placeholder": "Ex: Groupe AXIS International"
+    },
+    {
+      "key": "field_temoignage_rating",
+      "label": "Note sur 5 étoiles",
+      "name": "temoignage_rating",
+      "type": "number",
+      "instructions": "Note de 1 à 5",
+      "required": 1,
+      "default_value": 5,
+      "min": 1,
+      "max": 5,
+      "step": 1
+    },
+    {
+      "key": "field_temoignage_quote",
+      "label": "Citation / Avis Client",
+      "name": "temoignage_quote",
+      "type": "textarea",
+      "instructions": "Retour d'expérience sur la collaboration avec Althium SARL",
+      "required": 1,
+      "rows": 4,
+      "placeholder": "Althium SARL a su répondre à nos exigences de sécurité et de gestion avec une rigueur exemplaire..."
+    },
+    {
+      "key": "field_temoignage_avatar",
+      "label": "Photo de profil (Carré 1:1)",
+      "name": "temoignage_avatar",
+      "type": "image",
+      "instructions": "Photo de la personne ou logo de l'entreprise",
+      "required": 0,
+      "return_format": "url",
+      "preview_size": "thumbnail",
+      "library": "all"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "temoignages"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true
+}

@@ -1,0 +1,105 @@
+{
+  "version": "0.4",
+  "title": "Single Template — Réalisations Althium",
+  "type": "single-post",
+  "content": [
+    {
+      "id": "sec_hero_real",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "background_background": "classic",
+        "background_color": "#0C2E63",
+        "padding": { "unit": "px", "top": 120, "bottom": 80 }
+      },
+      "elements": [
+        {
+          "id": "col_hero_real",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "w_real_meta",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "[acf field='realisation_meta']",
+                "header_size": "span",
+                "title_color": "#1E9FE0",
+                "typography_font_family": "Sora",
+                "typography_font_size": { "unit": "px", "size": 14 }
+              }
+            },
+            {
+              "id": "w_real_title",
+              "elType": "widget",
+              "widgetType": "theme-post-title",
+              "settings": {
+                "title_color": "#FFFFFF",
+                "typography_font_family": "Sora",
+                "typography_font_size": { "unit": "px", "size": 48 }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sec_body_real",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "padding": { "unit": "px", "top": 70, "bottom": 70 }
+      },
+      "elements": [
+        {
+          "id": "col_real_featured",
+          "elType": "column",
+          "settings": { "_column_size": 60 },
+          "elements": [
+            {
+              "id": "w_real_img",
+              "elType": "widget",
+              "widgetType": "theme-post-featured-image",
+              "settings": {}
+            }
+          ]
+        },
+        {
+          "id": "col_real_info",
+          "elType": "column",
+          "settings": { "_column_size": 40 },
+          "elements": [
+            {
+              "id": "w_real_kpi_box",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Résultat & Impact : [acf field='realisation_kpi']",
+                "header_size": "h3",
+                "title_color": "#C41230",
+                "typography_font_family": "Sora"
+              }
+            },
+            {
+              "id": "w_real_content",
+              "elType": "widget",
+              "widgetType": "theme-post-content",
+              "settings": {}
+            },
+            {
+              "id": "w_real_cta_btn",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Lancer un projet similaire",
+                "link": { "url": "#elementor-action:action=popup:open&settings=eyJpZCI6ImRldmlzLXBvcHVwIn0=" },
+                "background_color": "#0C2E63"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "key": "group_formations_fields",
+  "title": "Détails de la Formation (ALTHIUM)",
+  "fields": [
+    {
+      "key": "field_formation_duree",
+      "label": "Durée de la Formation",
+      "name": "formation_duree",
+      "type": "text",
+      "instructions": "Ex: 3 Jours (24 Heures intensives)"
+    },
+    {
+      "key": "field_formation_public",
+      "label": "Public Cible",
+      "name": "formation_public",
+      "type": "text",
+      "instructions": "Ex: Cadres dirigeants, directeurs techniques, ingénieurs"
+    },
+    {
+      "key": "field_formation_dates",
+      "label": "Prochaine Session",
+      "name": "formation_dates",
+      "type": "text",
+      "instructions": "Ex: 12 au 15 Novembre 2026 à Abidjan"
+    },
+    {
+      "key": "field_formation_tarif",
+      "label": "Tarif d'inscription (FCFA)",
+      "name": "formation_tarif",
+      "type": "text",
+      "instructions": "Ex: 350 000 FCFA HT / participant"
+    },
+    {
+      "key": "field_formation_programme_pdf",
+      "label": "Programme Détaillé PDF",
+      "name": "formation_programme_pdf",
+      "type": "file",
+      "return_format": "url",
+      "mime_types": "pdf"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "formations"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "active": true
+}

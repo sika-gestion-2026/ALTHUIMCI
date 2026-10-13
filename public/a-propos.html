@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À Propos d'ALTHIUM SARL — Histoire, Vision &amp; Équipe</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 26px;
+      margin-top: 40px;
+    }
+    .team-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.3s ease;
+    }
+    .team-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+    }
+    .team-img-box {
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      background: #0C2E63;
+    }
+    .team-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .team-body {
+      padding: 20px;
+    }
+    .team-name {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+    .team-role {
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .team-bio {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 30px;
+    }
+    .val-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 28px 22px;
+      text-align: center;
+    }
+    .val-icon {
+      font-size: 32px;
+      margin-bottom: 14px;
+    }
+    .val-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+    .val-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    @media (max-width: 900px) {
+      .team-grid, .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .team-grid, .values-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-links">
+        <a href="tel:+2250556562524">📞 +225 05 56 56 25 24</a>
+        <a href="tel:+2250758783221">📞 +225 07 58 78 32 21</a>
+        <a href="mailto:contact@althium.ci">✉️ contact@althium.ci</a>
+        <a href="mailto:info@althium.ci">✉️ info@althium.ci</a>
+      </div>
+      <div style="font-size:12px; font-weight:700; color:#38BDF8;">
+        📍 Abidjan, Côte d'Ivoire
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <img src="logo-althium.png" alt="ALTHIUM SARL">
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="a-propos.html" class="nav-link active">À Propos</a>
+        <a href="metier-single.html" class="nav-link">Nos 6 Activités</a>
+        <a href="realisations.html" class="nav-link">Réalisations</a>
+        <a href="blog.html" class="nav-link">Actualités</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <div class="mobile-nav-cta">
+          <button type="button" class="btn btn-primary" data-open-modal style="width:100%;">Demander un devis</button>
+        </div>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary" data-open-modal>Demander un devis</button>
+        <button type="button" class="menu-burger" id="burgerBtn" aria-label="Menu principal" aria-expanded="false">
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- BANDEAU TITRE -->
+  <section style="background:linear-gradient(135deg, #092047 0%, #0C2E63 100%); color:#FFF; padding:80px 0 60px;">
+    <div class="container text-center" style="text-align:center;">
+      <div style="font-family:var(--font-title); font-size:13px; font-weight:800; color:#38BDF8; letter-spacing:1px; text-transform:uppercase; margin-bottom:10px;">
+        QUI SOMMES-NOUS ?
+      </div>
+      <h1 style="font-size:44px; font-weight:800; color:#FFFFFF; margin-bottom:14px;">À Propos d'ALTHIUM SARL</h1>
+      <p style="font-size:18px; color:#CBD5E1; max-width:700px; margin:0 auto;">
+        Découvrez notre genèse, notre vision multidisciplinaire intégrée et les femmes et hommes qui incarnent l'excellence au quotidien.
+      </p>
+    </div>
+  </section>
+
+  <!-- HISTOIRE & MISSION -->
+  <section class="section-padding">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:1.1fr 0.9fr; gap:50px; align-items:center;">
+        <div>
+          <span class="section-tag">Notre Histoire &amp; Vision</span>
+          <h2 class="section-title">Une Genèse Guidée par la Rigueur et la Synergie</h2>
+          <p style="font-size:16px; color:var(--text); line-height:1.7; margin-bottom:16px;">
+            Fondée avec la volonté de répondre aux défis complexes des entreprises et des investisseurs en Afrique de l'Ouest, <strong>ALTHIUM SARL</strong> est née d'un constat fort : la performance d'un projet d'envergure repose sur la synchronisation parfaite entre la technique sur le terrain et la stratégie décisionnelle.
+          </p>
+          <p style="font-size:15px; color:var(--text-muted); line-height:1.7; margin-bottom:20px;">
+            En réunissant sous un même pavillon le <strong>BTP</strong>, <strong>l'Immobilier</strong>, le <strong>Conseil en Gestion &amp; Intelligence Économique</strong>, le <strong>Marketing Sportif</strong>, la <strong>Formation</strong> et <strong>l'Import-Export</strong>, Althium propose une vision transversale complète permettant de sécuriser les capitaux, fluidifier la logistique et valoriser les talents.
+          </p>
+          <div style="background:var(--bg-light); border-left:4px solid var(--accent); padding:16px 20px; border-radius:0 var(--radius-sm) var(--radius-sm) 0;">
+            <div style="font-family:var(--font-title); font-weight:700; color:var(--primary); font-size:16px;">Notre Mission :</div>
+            <p style="font-size:14px; color:var(--text); margin-top:4px;">
+              Apporter une réponse experte, intégrée et éthique à chaque étape de la chaîne de valeur de nos clients partenaires.
+            </p>
+          </div>
+        </div>
+
+        <div style="border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-lg);">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Équipe Althium en réunion" style="width:100%; aspect-ratio:4/3; object-fit:cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALEURS FONDAMENTALES -->
+  <section class="section-padding section-bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Notre ADN</span>
+        <h2 class="section-title">Nos 4 Valeurs Fondamentales</h2>
+        <p class="section-desc">Chaque décision et chaque chantier chez ALTHIUM sont guidés par ces principes non négociables.</p>
+      </div>
+
+      <div class="values-grid">
+        <div class="val-card">
+          <div class="val-icon">🎯</div>
+          <h3 class="val-title">Expertise</h3>
+          <p class="val-desc">Des compétences pointues éprouvées, certifiées et actualisées en continu dans chacun de nos 6 domaines d'activité.</p>
+        </div>
+
+        <div class="val-card">
+          <div class="val-icon">💡</div>
+          <h3 class="val-title">Innovation</h3>
+          <p class="val-desc">L'intégration de technologies avancées, de méthodes agiles et de solutions décarbonées au service de la performance.</p>
+        </div>
+
+        <div class="val-card">
+          <div class="val-icon">🛡️</div>
+          <h3 class="val-title">Intégrité</h3>
+          <p class="val-desc">Une éthique irréprochable, une transparence totale dans nos rapports d'études et le respect scrupuleux de la conformité.</p>
+        </div>
+
+        <div class="val-card">
+          <div class="val-icon">⭐</div>
+          <h3 class="val-title">Excellence</h3>
+          <p class="val-desc">La culture du résultat, le respect intransigeant des délais et la recherche permanente de la perfection d'exécution.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTRE ÉQUIPE -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Capital Humain</span>
+        <h2 class="section-title">Les Dirigeants &amp; Experts Althium</h2>
+        <p class="section-desc">Des profils expérimentés combinant une solide expérience internationale et une maîtrise intime du marché ivoirien et régional.</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-img-box">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Directeur Général">
+          </div>
+          <div class="team-body">
+            <div class="team-name">Direction Générale</div>
+            <div class="team-role">Présidence &amp; Stratégie</div>
+            <p class="team-bio">18 ans d'expérience dans la conduite de grands projets d'infrastructures et la gouvernance d'entreprises panafricaines.</p>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-img-box">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Responsable Pôle BTP & Immobilier">
+          </div>
+          <div class="team-body">
+            <div class="team-name">Pôle BTP &amp; Immobilier</div>
+            <div class="team-role">Ingénierie &amp; Travaux</div>
+            <p class="team-bio">Ingénieur civil de référence, spécialisé dans la maîtrise d'ouvrage complexe et les programmes immobiliers de prestige.</p>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-img-box">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80" alt="Responsable Intelligence Économique">
+          </div>
+          <div class="team-body">
+            <div class="team-name">Pôle Conseil &amp; IE</div>
+            <div class="team-role">Veille &amp; Stratégie</div>
+            <p class="team-bio">Expert en intelligence économique, cartographie des risques territoriaux et due diligence pour investisseurs internationaux.</p>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-img-box">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Responsable Sport & Formations">
+          </div>
+          <div class="team-body">
+            <div class="team-name">Pôle Sport &amp; Formations</div>
+            <div class="team-role">Sponsoring &amp; Compétences</div>
+            <p class="team-bio">Spécialiste de la valorisation de marques à travers le sport de haut niveau et de l'ingénierie pédagogique professionnelle.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROCHE & MÉTHODOLOGIE MULTIDISCIPLINAIRE -->
+  <section class="section-padding section-bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Notre Approche</span>
+        <h2 class="section-title">La Démarche Multidisciplinaire ALTHIUM</h2>
+        <p class="section-desc">Comment nous articulons nos métiers pour offrir un accompagnement sans équivalent sur le marché.</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:26px;">
+        <div class="why-card">
+          <div class="why-icon">1</div>
+          <h3 class="why-card-title">Diagnostic &amp; Cadrage 360°</h3>
+          <p class="why-card-desc">Analyse fine de votre environnement : faisabilité technique, analyse de marché IE, conformité réglementaire et risques fonciers.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon accent">2</div>
+          <h3 class="why-card-title">Exécution Transverse Maîtrisée</h3>
+          <p class="why-card-desc">Mobilisation concertée des ressources : déploiement des chantiers BTP, logistique d'approvisionnement import-export et formation des équipes.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">3</div>
+          <h3 class="why-card-title">Livraison &amp; Valorisation Durable</h3>
+          <p class="why-card-desc">Suivi post-livraison, valorisation de l'image de marque (marketing/sponsoring), gestion locative et transfert pérenne de savoir-faire.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POURQUOI CHOISIR ALTHIUM -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Avantages Concurrentiels</span>
+        <h2 class="section-title">Pourquoi Choisir ALTHIUM SARL ?</h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">🌐</div>
+          <h3 class="why-card-title">Vision Intégrée 360°</h3>
+          <p class="why-card-desc">Un seul partenaire pour gérer de front la construction, la gestion, la sécurité informationnelle et le négoce.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon accent">🤝</div>
+          <h3 class="why-card-title">Synergie des Activités</h3>
+          <p class="why-card-desc">Nos pôles se nourrissent mutuellement : notre pôle Import-Export optimise les coûts de nos chantiers BTP, etc.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">📍</div>
+          <h3 class="why-card-title">Ancrage Local Fort</h3>
+          <p class="why-card-desc">Maîtrise intime des rouages administratifs, fonciers et logistiques en Côte d'Ivoire et dans la zone UEMOA.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon accent">⚡</div>
+          <h3 class="why-card-title">Réactivité &amp; Engagement</h3>
+          <p class="why-card-desc">Disponibilité immédiate, interlocuteur dédié et respect absolu des délais contractuels engagés.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRAND LOGO FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand-banner">
+        <div class="footer-logo-container">
+          <img src="logo-althium.png" alt="ALTHIUM SARL">
+        </div>
+        <div class="footer-tagline-highlight">« La force d'un professionnel »</div>
+      </div>
+
+      <div class="footer-bottom" style="border-top:none; padding-top:0;">
+        <div>© 2026 ALTHIUM SARL. Tous droits réservés.</div>
+        <div>
+          <a href="mailto:contact@althium.ci" style="color:#38BDF8; margin-right:15px;">contact@althium.ci</a>
+          <a href="tel:+2250556562524" style="color:#38BDF8;">+225 05 56 56 25 24</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOUTON WHATSAPP -->
+  <a href="https://wa.me/2250556562524?text=Bonjour%20Althium%20SARL" class="whatsapp-float-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2m.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.19 8.19 0 01-5.82 2.42c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.44 1.03 2.61c.13.17 1.77 2.7 4.28 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.29z"/></svg>
+  </a>
+
+  <!-- STICKY BAR MOBILE -->
+  <div class="mobile-sticky-bar">
+    <a href="tel:+2250556562524" class="mobile-bar-btn mobile-call">
+      <span>📞 +225 Appeler</span>
+    </a>
+    <button type="button" class="mobile-bar-btn mobile-quote" data-open-modal>
+      <span>⚡ Devis Express</span>
+    </button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

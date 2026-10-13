@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actualités &amp; Analyses — ALTHIUM SARL</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .press-release-item {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+      box-shadow: var(--shadow-sm);
+    }
+    .event-card {
+      background: var(--bg-light);
+      border-radius: var(--radius-md);
+      border-left: 4px solid var(--accent);
+      padding: 20px;
+      margin-bottom: 14px;
+    }
+    @media (max-width: 900px) {
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+      .press-release-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-links">
+        <a href="tel:+2250556562524">📞 +225 05 56 56 25 24</a>
+        <a href="tel:+2250758783221">📞 +225 07 58 78 32 21</a>
+        <a href="mailto:contact@althium.ci">✉️ contact@althium.ci</a>
+        <a href="mailto:info@althium.ci">✉️ info@althium.ci</a>
+      </div>
+      <div style="font-size:12px; font-weight:700; color:#38BDF8;">
+        📍 Abidjan, Côte d'Ivoire
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <img src="logo-althium.png" alt="ALTHIUM SARL">
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="a-propos.html" class="nav-link">À Propos</a>
+        <a href="metier-single.html" class="nav-link">Nos 6 Activités</a>
+        <a href="realisations.html" class="nav-link">Réalisations</a>
+        <a href="blog.html" class="nav-link active">Actualités</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <div class="mobile-nav-cta">
+          <button type="button" class="btn btn-primary" data-open-modal style="width:100%;">Demander un devis</button>
+        </div>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary" data-open-modal>Demander un devis</button>
+        <button type="button" class="menu-burger" id="burgerBtn" aria-label="Menu principal" aria-expanded="false">
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- BANDEAU TITRE -->
+  <section style="background:linear-gradient(135deg, #092047 0%, #0C2E63 100%); color:#FFF; padding:80px 0 60px;">
+    <div class="container text-center" style="text-align:center;">
+      <div style="font-family:var(--font-title); font-size:13px; font-weight:800; color:#38BDF8; letter-spacing:1px; text-transform:uppercase; margin-bottom:10px;">
+        VEILLE, COMMUNIQUÉS &amp; ÉVÉNEMENTS
+      </div>
+      <h1 style="font-size:44px; font-weight:800; color:#FFFFFF; margin-bottom:14px;">Actualités &amp; Analyses ALTHIUM</h1>
+      <p style="font-size:18px; color:#CBD5E1; max-width:700px; margin:0 auto;">
+        Analyses sectorielles, tendances économiques en Côte d'Ivoire, annonces de partenariats et agenda des formations.
+      </p>
+    </div>
+  </section>
+
+  <!-- ARTICLES DU BLOG (6 SECTEURS) -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tribunes d'Experts</span>
+        <h2 class="section-title">Articles Spécialisés par Métier</h2>
+      </div>
+
+      <div class="blog-grid">
+        <!-- 1. BTP -->
+        <div class="real-card">
+          <div class="real-media">
+            <span class="real-tag" style="background:#0C2E63;">BTP</span>
+            <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18615f3?auto=format&fit=crop&w=800&q=80" alt="BTP">
+          </div>
+          <div class="real-content">
+            <div class="real-meta">02 Septembre 2026 • Construction</div>
+            <h3 class="real-title">Les Grandes Tendances du BTP Durable en Afrique de l'Ouest</h3>
+            <p class="real-desc">L'intégration des bétons bas carbone et les normes d'isolation thermique pour concevoir des immeubles tertiaires sobres et pérennes.</p>
+            <a href="#" style="font-size:13px; font-weight:700; color:var(--primary); margin-top:auto;">Lire l'analyse complète →</a>
+          </div>
+        </div>
+
+        <!-- 2. Immobilier -->
+        <div class="real-card">
+          <div class="real-media">
+            <span class="real-tag" style="background:#0891B2;">Immobilier</span>
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" alt="Immobilier">
+          </div>
+          <div class="real-content">
+            <div class="real-meta">28 Août 2026 • Investissement</div>
+            <h3 class="real-title">Investissement Locatif : Sécuriser Son Rendement à Abidjan</h3>
+            <p class="real-desc">Les zones à fort potentiel (Cocody, Plateau, Assinie), la vérification des titres fonciers (ACD) et l'intérêt d'une gestion locative professionnelle.</p>
+            <a href="#" style="font-size:13px; font-weight:700; color:var(--primary); margin-top:auto;">Lire l'analyse complète →</a>
+          </div>
+        </div>
+
+        <!-- 3. Conseil & IE -->
+        <div class="real-card">
+          <div class="real-media">
+            <span class="real-tag" style="background:#0F172A;">Conseil &amp; IE</span>
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Conseil & IE">
+          </div>
+          <div class="real-content">
+            <div class="real-meta">15 Août 2026 • Stratégie</div>
+            <h3 class="real-title">L'Intelligence Économique au Cœur de la Prise de Décision</h3>
+            <p class="real-desc">Cartographie des acteurs, détection des signaux faibles et protection du patrimoine informationnel des entreprises face aux risques modernes.</p>
+            <a href="#" style="font-size:13px; font-weight:700; color:var(--primary); margin-top:auto;">Lire l'analyse complète →</a>
+          </div>
+        </div>
+
+        <!-- 4. Marketing Sportif -->
+        <div class="real-card">
+          <div class="real-media">
+            <span class="real-tag" style="background:#E11D48;">Sport</span>
+            <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=800&q=80" alt="Marketing Sportif">
+          </div>
+          <div class="real-content">
+            <div class="real-meta">05 Août 2026 • Sponsoring</div>
+            <h3 class="real-title">Le Sponsoring Sportif : Levier Majeur de Visibilité des Marques</h3>
+            <p class="real-desc">Comment convertir un partenariat de sponsoring ou un droit à l'image d'athlète en retour sur investissement commercial mesurable.</p>
+            <a href="#" style="font-size:13px; font-weight:700; color:var(--primary); margin-top:auto;">Lire l'analyse complète →</a>
+          </div>
+        </div>
+
+        <!-- 5. Formations -->
+        <div class="real-card">
+          <div class="real-media">
+            <span class="real-tag" style="background:#2E8B57;">Formations</span>
+            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80" alt="Formations">
+          </div>
+          <div class="real-content">
+            <div class="real-meta">20 Juillet 2026 • RH &amp; Compétences</div>
+            <h3 class="real-title">Formation Continue : Pourquoi Miser sur les Talents Internes</h3>
+            <p class="real-desc">L'importance des formations certifiantes en management de chantier, sécurité QHSE et outils de veille stratégique pour fidéliser les cadres.</p>
+            <a href="#" style="font-size:13px; font-weight:700; color:var(--primary); margin-top:auto;">Lire l'analyse complète →</a>
+          </div>
+        </div>
+
+        <!-- 6. Import-Export -->
+        <div class="real-card">
+          <div class="real-media">
+            <span class="real-tag" style="background:#D97706;">Import-Export</span>
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80" alt="Import-Export">
+          </div>
+          <div class="real-content">
+            <div class="real-meta">10 Juillet 2026 • Logistique</div>
+            <h3 class="real-title">Optimiser Ses Corridors Logistiques et Procédures Douanières</h3>
+            <p class="real-desc">Maîtrise des Incoterms 2020, optimisation des délais d'attente au Port d'Abidjan et sécurisation des lettres de crédit documentaire.</p>
+            <a href="#" style="font-size:13px; font-weight:700; color:var(--primary); margin-top:auto;">Lire l'analyse complète →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNIQUÉS DE PRESSE & ÉVÉNEMENTS -->
+  <section class="section-padding section-bg-light">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:40px;">
+        <!-- Communiqués -->
+        <div>
+          <span class="section-tag">Annonces Officielles</span>
+          <h3 style="font-size:24px; color:var(--primary); margin-bottom:20px;">Communiqués de Presse</h3>
+          
+          <div class="press-release-item">
+            <div>
+              <div style="font-size:12px; color:var(--accent); font-weight:700;">25 AOÛT 2026</div>
+              <h4 style="font-size:16px; font-weight:700; color:var(--primary); margin:4px 0;">Althium SARL annonce un partenariat stratégique dans le génie civil</h4>
+              <p style="font-size:13px; color:var(--text-muted);">Alliance industrielle pour l'accélération des infrastructures durables en zone UEMOA.</p>
+            </div>
+            <a href="#" class="btn btn-dark" style="padding:6px 12px; font-size:12px;">Lire</a>
+          </div>
+
+          <div class="press-release-item">
+            <div>
+              <div style="font-size:12px; color:var(--accent); font-weight:700;">12 JUILLET 2026</div>
+              <h4 style="font-size:16px; font-weight:700; color:var(--primary); margin:4px 0;">Lancement officiel de notre académie de formation des cadres BTP</h4>
+              <p style="font-size:13px; color:var(--text-muted);">Ouverture des inscriptions pour la session certifiante de rentrée à Abidjan.</p>
+            </div>
+            <a href="#" class="btn btn-dark" style="padding:6px 12px; font-size:12px;">Lire</a>
+          </div>
+        </div>
+
+        <!-- Agenda Événements & Formations -->
+        <div>
+          <span class="section-tag">Agenda</span>
+          <h3 style="font-size:24px; color:var(--primary); margin-bottom:20px;">Événements &amp; Prochaines Sessions</h3>
+
+          <div class="event-card">
+            <div style="font-size:12px; font-weight:800; color:var(--accent); text-transform:uppercase;">15-17 OCTOBRE 2026 • ABIDJAN</div>
+            <h4 style="font-size:16px; font-weight:700; color:var(--primary); margin:4px 0;">Séminaire Régional : L'Intelligence Économique en Afrique</h4>
+            <p style="font-size:13px; color:var(--text); line-height:1.5;">Atelier pratique de 3 jours pour dirigeants et directeurs de la conformité.</p>
+            <button type="button" class="btn btn-primary" style="padding:6px 14px; font-size:12px; margin-top:8px;" data-open-modal>S'inscrire</button>
+          </div>
+
+          <div class="event-card">
+            <div style="font-size:12px; font-weight:800; color:var(--secondary); text-transform:uppercase;">05-09 NOVEMBRE 2026 • ABIDJAN</div>
+            <h4 style="font-size:16px; font-weight:700; color:var(--primary); margin:4px 0;">Formation Certifiante : Conduite de Chantier &amp; Normes QHSE</h4>
+            <p style="font-size:13px; color:var(--text); line-height:1.5;">Session intensive réservée aux conducteurs de travaux et chefs de projets BTP.</p>
+            <button type="button" class="btn btn-secondary" style="padding:6px 14px; font-size:12px; margin-top:8px;" data-open-modal>S'inscrire</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRAND LOGO FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand-banner">
+        <div class="footer-logo-container">
+          <img src="logo-althium.png" alt="ALTHIUM SARL">
+        </div>
+        <div class="footer-tagline-highlight">« La force d'un professionnel »</div>
+      </div>
+
+      <div class="footer-bottom" style="border-top:none; padding-top:0;">
+        <div>© 2026 ALTHIUM SARL. Tous droits réservés.</div>
+        <div>
+          <a href="mailto:contact@althium.ci" style="color:#38BDF8; margin-right:15px;">contact@althium.ci</a>
+          <a href="tel:+2250556562524" style="color:#38BDF8;">+225 05 56 56 25 24</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOUTON WHATSAPP -->
+  <a href="https://wa.me/2250556562524?text=Bonjour%20Althium%20SARL" class="whatsapp-float-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2m.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.19 8.19 0 01-5.82 2.42c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.44 1.03 2.61c.13.17 1.77 2.7 4.28 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.29z"/></svg>
+  </a>
+
+  <!-- STICKY BAR MOBILE -->
+  <div class="mobile-sticky-bar">
+    <a href="tel:+2250556562524" class="mobile-bar-btn mobile-call">
+      <span>📞 +225 Appeler</span>
+    </a>
+    <button type="button" class="mobile-bar-btn mobile-quote" data-open-modal>
+      <span>⚡ Devis Express</span>
+    </button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

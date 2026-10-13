@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0077EE" />
+      <stop offset="40%" stop-color="#00A2FF" />
+      <stop offset="100%" stop-color="#0088EE" />
+    </linearGradient>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Groupe A stylisé géométrique -->
+  <g id="Emblem" filter="url(#subtleShadow)">
+    <path d="M 400 80 
+             L 660 550 
+             C 610 540, 560 480, 540 430 
+             C 500 480, 440 515, 330 520 
+             L 140 550 
+             Z" 
+          fill="url(#blueGradient)" />
+    
+    <path d="M 400 240 
+             L 310 420 
+             C 380 415, 430 395, 470 350 
+             Z" 
+          fill="#FFFFFF" />
+
+    <path d="M 445 315 L 535 270 L 525 250 L 435 295 Z" fill="#FFFFFF" />
+  </g>
+
+  <!-- ALTHIUM Texte Rouge -->
+  <text x="400" y="650" 
+        font-family="'Sora', 'Montserrat', 'Arial Black', sans-serif" 
+        font-size="88" 
+        font-weight="900" 
+        letter-spacing="2" 
+        fill="#C41230" 
+        text-anchor="middle">ALTHIUM</text>
+
+  <!-- Slogan Noir -->
+  <text x="400" y="715" 
+        font-family="'Inter', 'Segoe UI', sans-serif" 
+        font-size="34" 
+        font-weight="400" 
+        letter-spacing="0.5" 
+        fill="#161B22" 
+        text-anchor="middle">La force d'un professionnel</text>
+</svg>

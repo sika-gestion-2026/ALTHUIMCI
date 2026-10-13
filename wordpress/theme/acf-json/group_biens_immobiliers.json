@@ -1,0 +1,81 @@
+{
+  "key": "group_biens_immobiliers_fields",
+  "title": "Détails du Bien Immobilier (ALTHIUM)",
+  "fields": [
+    {
+      "key": "field_immo_type_transaction",
+      "label": "Type de transaction",
+      "name": "immo_type_transaction",
+      "type": "select",
+      "instructions": "Catégorie de l'offre immobilière",
+      "required": 1,
+      "choices": {
+        "vente": "Vente",
+        "location": "Location",
+        "promotion": "Promotion Immobilière",
+        "investissement": "Conseil en Investissement"
+      },
+      "default_value": "vente",
+      "ui": 1
+    },
+    {
+      "key": "field_immo_localisation",
+      "label": "Localisation / Ville",
+      "name": "immo_localisation",
+      "type": "text",
+      "instructions": "Ex: Abidjan, Cocody Riviera / Plateau",
+      "required": 1,
+      "placeholder": "Ex: Abidjan — Cocody Ambassades"
+    },
+    {
+      "key": "field_immo_surface",
+      "label": "Surface / Superficie",
+      "name": "immo_surface",
+      "type": "text",
+      "instructions": "Ex: 450 m², 1 200 m² de bureaux",
+      "required": 0,
+      "placeholder": "Ex: 350 m²"
+    },
+    {
+      "key": "field_immo_prix",
+      "label": "Prix / Loyer",
+      "name": "immo_prix",
+      "type": "text",
+      "instructions": "Ex: Nous consulter / FCFA",
+      "required": 0,
+      "placeholder": "Prix sur consultation"
+    },
+    {
+      "key": "field_immo_statut",
+      "label": "Statut du projet",
+      "name": "immo_statut",
+      "type": "select",
+      "choices": {
+        "disponible": "Disponible immédiatement",
+        "en_cours": "Chantier / Commercialisation en cours",
+        "livre": "100% Vendu / Livré"
+      },
+      "default_value": "disponible"
+    },
+    {
+      "key": "field_immo_gallery",
+      "label": "Galerie de photos du bien",
+      "name": "immo_gallery",
+      "type": "gallery",
+      "required": 0
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "biens_immobiliers"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "active": true
+}

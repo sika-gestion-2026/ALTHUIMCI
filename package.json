@@ -1,0 +1,21 @@
+{
+  "name": "althium-sarl-site-officiel",
+  "version": "3.0.0",
+  "description": "Site officiel ALTHIUM SARL — BTP, Immobilier, Conseil & IE, Marketing Sportif, Formations, Import-Export. Côte d'Ivoire.",
+  "main": "serve.js",
+  "scripts": {
+    "start": "node serve.js"
+  },
+  "keywords": [
+    "althium",
+    "btp",
+    "immobilier",
+    "cote-divoire",
+    "abidjan"
+  ],
+  "author": "ALTHIUM SARL",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
